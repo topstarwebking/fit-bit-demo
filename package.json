@@ -1,0 +1,63 @@
+{
+  "name": "zeit",
+  "version": "0.1.2",
+  "private": true,
+  "license": "Apache License 2.0",
+  "devDependencies": {
+    "@fitbit/sdk": "~4.1.0",
+    "@fitbit/sdk-cli": "~1.7.1",
+    "@types/jest": "~25.2.1",
+    "@types/node": "~13.11.0",
+    "fitbit-sdk-types": "~4.3.5",
+    "jest": "~25.2.7",
+    "ts-jest": "~24.2.0",
+    "typescript": "~3.8.3"
+  },
+  "fitbit": {
+    "appUUID": "661063e3-60d4-4b50-a2a1-5bfacca11bb3",
+    "appType": "clockface",
+    "appDisplayName": "Die Zeit",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "#ffffff",
+    "requestedPermissions": [],
+    "buildTargets": [
+      "higgs",
+      "meson",
+      "gemini",
+      "mira"
+    ],
+    "i18n": {},
+    "defaultLanguage": "en-US"
+  },
+  "scripts": {
+    "build": "fitbit-build",
+    "debug": "fitbit",
+    "test": "jest",
+    "clear_jest": "jest --clearCache"
+  },
+  "jest": {
+    "verbose": true,
+    "roots": [
+      "<rootDir>/app"
+    ],
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "((\\.|/)(test|spec))\\.tsx?$",
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "app/*.ts"
+    ],
+    "moduleNameMapper": {
+      "mocks": "app/test/mocks.ts"
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  }
+}

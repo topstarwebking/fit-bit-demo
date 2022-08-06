@@ -1,0 +1,44 @@
+.background {
+  viewport-fill: black;
+}
+
+text {
+  font-family: Fabrikat-Black;
+  text-length: 32;
+  text-anchor: middle;
+  x: 50%;
+  fill: white;
+}
+
+#dateBox {
+  font-size: 22;
+  y: 10%;
+}
+
+#dateBoxShadow {
+  font-size: 22;
+  x: 50%+2;
+  y: 10%+2;
+}
+
+#timeBox {
+  font-size: 120;
+  y: 45%+40;
+}
+
+#timeBoxShadow {
+  font-size: 120;
+  x: 50%+3;
+  y: 45%+43;
+}
+
+#wordBox {
+  font-size: 30;
+  y: 85%;
+}
+
+#wordBoxShadow {
+  font-size: 30;
+  x: 50%+2;
+  y: 85%+2;
+}
